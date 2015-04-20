@@ -17,6 +17,6 @@ class Player {
     }
 
     fun version(): String {
-        return "Foslin v0.0.5 - KOTLIK"
+        return "Kusslin v0.0.5 - KOTLIK"
     }
 }
