@@ -5,18 +5,20 @@ import org.json.JSONObject
 
 class Player {
     fun betRequest(game_state: JSONObject): Int {
-        val player = currentPlayer(game_state)
-        val min_raise = (game_state.get("current_buy_in") as Int) - (player.get("bet") as Int)
-        val cards = getPlayerCards(player)
+//        val player = currentPlayer(game_state)
+//        val min_raise = (game_state.get("current_buy_in") as Int) - (player.get("bet") as Int)
+//        val cards = getPlayerCards(player)
+//
+//        val cr1 = (cards[0] as JSONObject).get("rank") as String
+//        val cr2 = (cards[1] as JSONObject).get("rank") as String
 
-        val cr1 = (cards[0] as JSONObject).get("rank") as String
-        val cr2 = (cards[1] as JSONObject).get("rank") as String
+//        return if (cr1 == cr2) {
+//            min_raise*2
+//        } else {
+//            0
+//        }
 
-        return if (cr1 == cr2) {
-            min_raise*2
-        } else {
-            0
-        }
+        return 100
     }
 
     private fun getPlayerCards(player: JSONObject) = player.get("hole_cards") as JSONArray
