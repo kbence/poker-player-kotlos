@@ -5,7 +5,7 @@ import org.json.JSONObject
 
 class Player {
     fun betRequest(game_state: JSONObject): Int {
-        return (Math.random() * 200).toInt()
+        return (Math.random() * 400).toInt()
     }
 
     private fun getPlayerCards(player: JSONObject) = player.get("hole_cards") as JSONArray
