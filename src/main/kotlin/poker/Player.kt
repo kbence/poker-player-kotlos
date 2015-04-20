@@ -9,7 +9,7 @@ class Player {
         val min_raise = (game_state.get("current_buy_in") as Int) - (player.get("bet") as Int)
         val cards = getPlayerCards(player)
 
-        return min_raise
+        return min_raise*2
     }
 
     private fun getPlayerCards(player: JSONObject) = player.get("hole_cards") as JSONArray
@@ -21,6 +21,6 @@ class Player {
     }
 
     fun version(): String {
-        return "Bnc's Kotlin Player 0.0.2"
+        return "Bnc's Kotlin Player 0.0.3"
     }
 }
