@@ -17,6 +17,6 @@ class Player {
     }
 
     fun version(): String {
-        return "Bnc's Kotlin Player 0.0.3"
+        return "v0.0.4 - KOTLIK"
     }
 }
